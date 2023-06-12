@@ -41,12 +41,16 @@ figure {
   background-color: var(--accent);
 }
 
-img {
+.image {
+  background: url("images/image-header-mobile.jpg");
   width: 100%;
   display: block;
   mix-blend-mode: multiply;
   border-radius: var(--img-border-radius);
   opacity: 0.75;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-repeat: round;
 }
 
 .content-container {
@@ -127,9 +131,12 @@ p {
     padding: 20px 4rem 20px 4rem;
   }
 
-  img {
+  .image {
     height: 100%;
     aspect-ratio: 1;
+    background: url("images/image-header-desktop.jpg");
+    background-size: cover;
+    background-repeat: round;
   }
 
   h1 {
